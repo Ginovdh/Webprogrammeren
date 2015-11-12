@@ -1,29 +1,27 @@
-<!DOCKTYPE html> 
+<!DOCTYPE html> 
 <html>
 	<head>
-		<title>Puzzel 03</title>
+		<meta charset="UTF-8">
+		<title>Puzzel 04</title>
 	</head>
 
 	<body>
-		<h1>Puzzel 3!</h1>
+		<h1>Puzzel 4!</h1>
 		<script>
-			var team1 = prompt("wat is de score van team 1?")
-			var team2 = prompt("wat is de score van team 2?")
-			if(team1 < team2) {
-				alert("Team 2 heeft gewonnen!")
+			var aankoopbedrag = parseInt(prompt("Wat is het aankoopbedrag in euro's?"));
+			var totaal = aankoopbedrag + 3.95
+
+			if(aankoopbedrag > 25) {
+				alert("Uw aankoopbedrag is €"+aankoopbedrag+". Uw betaalt geen verzendkosten.")
 			}
 
-			if(team1 > team2) {
-				alert("Team 1 heeft gewonnen!")
+			if(aankoopbedrag < 25) {
+				alert("Uw aankoopbedrag is €"+totaal+" inclusief bezorgkosten.")
+			}
+			if(aankoopbedrag == 25) {
+				alert("Uw aankoopbedrag is €"+aankoopbedrag+". Uw betaalt geen verzendkosten.")
 			}
 
-			if(team1 < team2) {
-				alert("Team 2 heeft gewonnen!")
-			}
-
-			if(team1 === team2) {
-				alert("Gelijkspel!")
-			}
 		</script>
 	</body>
 
