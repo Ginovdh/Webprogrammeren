@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Puzzel 1! Week 02</title>
+		
+		<script type="text/javascript">
+			function vergelijkWoorden(naam1, naam2){
+			var naam1 = prompt("Vul hier uw inlognaam in:");
+			var naam2 = prompt("Bevestig uw inlognaam");
+			if(naam1 === naam2){
+					alert("Uw inlognaam is juist!");
+				} 
+				else{
+					alert("Uw inlognaam komt niet overeen. U heeft bij het eerste invulmoment "+naam1.length+" tekens ingevuld en bij het tweede invulmoment "+naam2.length+" tekens ingevuld.")
+				}
+		}	
+		</script>
+	</head>
+	<body>
+		<button onclick="vergelijkWoorden()">Inloggen</button>
+	</body>
+</html>
