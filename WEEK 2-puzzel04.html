@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Puzzel 4! Week 02</title>
+
+	</head>
+	
+	<body>
+
+		<script type="text/javascript">
+
+			function vergelijkWoorden(){
+			var woord1 = myform.elements["w1"].value;
+			var woord2 = myform.elements["w2"].value;
+			
+			if(woord1 === woord2){
+					document.getElementById("demo").innerHTML = ("De ingevoerde woorden zijn hetzelfde");
+				} 
+			if(woord1>woord2){
+					document.getElementById("demo").innerHTML = ("Het eerste woord is groter met "+woord1.length+" tekens");
+				}
+			if(woord1<woord2){
+					document.getElementById("demo").innerHTML = ("Het tweede woord is groter met "+woord2.length+" tekens");
+				}
+		};	
+		</script>
+
+		
+		<form id="myform">
+			Woord 1: <input type="text" name="w1" value"" />
+			<br>
+			Woord 2: <input type="text" name="w2" value"" />
+		</form>
+
+		<br>
+		
+		<button onclick="vergelijkWoorden()">Vergelijk uw woord:</button>
+
+		<p id="demo"></p>
+
+	</body>
+</html>

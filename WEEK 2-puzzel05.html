@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Puzzel 4! Week 02</title>
+
+		<script type="text/javascript">
+
+			function eudo(){
+			var euro = myform.elements["eu"].value;
+			var dollar = euro*1.08;
+			document.getElementById("demo").innerHTML = ("U voerde €"+euro+" in. Dat is "+dollar+" Dollar ");
+			} 
+
+			function eupe(){
+			var euro = myform.elements["eu"].value;
+			var peso = euro*18.06;
+			document.getElementById("demo").innerHTML = ("U voerde €"+euro+" in. Dat is "+peso+" Pesos ");
+			}
+
+			function euye(){
+			var euro = myform.elements["eu"].value;
+			var yen = euro*132.04;
+			document.getElementById("demo").innerHTML = ("U voerde €"+euro+" in. Dat is "+yen+" Yen ");
+			} 
+
+			function eupo(){
+			var euro = myform.elements["eu"].value;
+			var pond = euro*0.71;
+			document.getElementById("demo").innerHTML = ("U voerde €"+euro+" in. Dat is "+pond+" Pond ");
+			} 
+
+		</script>
+	</head>
+	<body>
+		<button onclick="eudo()">Euro naar Dollar:</button>
+		<button onclick="eupe()">Euro naar Pesos:</button>
+		<button onclick="euye()">Euro naar Yen:</button>
+		<button onclick="eupo()">Euro naar Pond:</button>
+
+		<form id="myform" action="">
+			Hoeveel euro?: € <input type="text" name="eu" value"" />
+		</form>
+
+		<p id="demo"></p>
+
+	</body>
+</html>

@@ -8,12 +8,12 @@
 			function berekenBMI(lengte, gewicht){
 			var lengte = prompt("Wat is uw lengte?(in meter)");
 			var gewicht = prompt("Wat is uw gewicht? (in kilo's)");
-			var BMI = gewicht / (lengte*2);
+			var BMI = gewicht / (lengte*lengte);
 			if(BMI>25){
-					alert("PAS OP! Uw BMI is hoger dan 25. U heeft overgewicht!");
+					alert("PAS OP! Uw BMI is hoger dan 25. U heeft overgewicht!. Uw BMI is "+BMI+"");
 				} 
 				else{
-					alert("Uw gewicht is correct!");
+					alert("Uw gewicht is correct! Uw BMI is "+BMI+"");
 				}
 		}	
 		</script>
