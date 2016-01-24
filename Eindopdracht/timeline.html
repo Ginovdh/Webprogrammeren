@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Timeline</title>
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="author" content"Gino van de Hoven">
+		<meta name="description" content="HU schoolopdracht webvaardigheden">
+
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+		<script src="js/timeline.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="css/lightbox.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>
+		<header>
+			<div id="menu">
+				<a href="timeline.html"><img src="images/logo.png" class="logo" alt="logo NETFLIXICO" height="30px"></a>
+				<a href="timeline.html">TIJDLIJN</a>
+				<a href="vrienden.html">VRIENDEN</a>
+				<a href="berichten.html">BERICHTEN</a>
+				<a href="inlog.html">Gino uitloggen</a>
+			</div>
+		</header>
+		<div id="container">
+			
+			<div id="cover">
+				<img src="images/header2.jpg" id="profip" alt="Profielfoto">
+			</div>
+
+			<div id="omslag">
+				<img src="images/profiel.jpg" id="profip" alt="Profielfoto" height="100px">
+				<p>Gino van de Hoven - Netflixer </P>
+			</div>
+				
+
+			<div id="vrienden">
+				<h1>Vrienden</h1>
+				<img src="images/1.jpg" alt="Profielfoto Vriend 1" width="100px">
+				<img src="images/2.jpg" alt="Profielfoto Vriend 2" width="100px">
+				<img src="images/3.jpg" alt="Profielfoto Vriend 3" width="100px">
+				<img src="images/4.jpg" alt="Profielfoto Vriend 4" width="100px">
+				<a href="vrienden.html"><p>Alle vrienden</p></a>
+			</div>
+
+			<div id="films">
+				<h1>Films en Series</h1>
+				<a href="images/5.jpg" data-lightbox="films" data-title="Narcos"><img src="images/5.jpg" alt="Narcos"width="100px"></a>
+				<a href="images/6.jpg" data-lightbox="films" data-title="House Of Cards"><img src="images/6.jpg" alt="HOC"width="100px"></a>
+				<a href="images/7.jpg" data-lightbox="films" data-title="Orange Is The New Black"><img src="images/7.jpg" alt="OITNB"width="100px"></a>
+				<a href="images/8.jpg" data-lightbox="films" data-title="Inception"><img src="images/8.jpg" alt="Inception"width="100px"></a>
+			</div>
+			<div id="timeline">
+				<div class="addBerichten">
+					<div id="textbox">
+						<textarea rows="4" cols="75" id="inputBericht"placeholder="Vertel over je Netflix ervaring!"></textarea>
+						<button class="addBericht">Plaatsen</button>
+
+						<div id="error"></div>
+					</div>
+				</div>
+
+				<div id="berichten">
+					<div class="bericht">
+						<div id="chatfoto"> </div>
+						<img src="images/profiel.jpg" id="profip" alt="Profielfoto" height="50px">
+						<div>
+						<p>Gino van de Hoven - Netflixer </P>
+						<p>Ey beste netflixers! welkom op NETFLIXCIO. Hét platform voor netflix.</p> 
+					</div>
+				</div>
+
+				<div id="error"></div>
+			</div>
+		</div>
+		<script src="js/lightbox.js"></script>
+	</body>
+</html>

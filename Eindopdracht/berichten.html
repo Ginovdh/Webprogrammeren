@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Berichten</title>
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="author" content"Gino van de Hoven">
+		<meta name="description" content="HU schoolopdracht webvaardigheden">
+
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+		<script src="js/berichten.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="css/lightbox.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>
+		<header>
+			<div id="menu">
+				<a href="timeline.html"><img src="images/logo.png" class="logo" alt="logo NETFLIXICO" height="30px"></a>
+				<a href="timeline.html">TIJDLIJN</a>
+				<a href="vrienden.html">VRIENDEN</a>
+				<a href="berichten.html">BERICHTEN</a>
+				<a href="inlog.html">Gino uitloggen</a>
+			</div>
+		</header>
+		<div id="container">
+			<div id="vriendenlijst">
+				<div class="vchat">
+					<h1>Mike</h1>
+					<img src="images/1.jpg" height="70px">
+					<p>Online</p>
+				</div>
+			
+				<div class="vchat">
+					<h1>Gijsbert</h1>
+					<img src="images/2.jpg" height="70px">
+					<p>Online</p>
+				</div>
+			</div>
+
+			<div id="info">
+					<h1>Mike</h1>
+					<p>Online</p>
+			</div>
+
+			<div id="berichtenvenster">
+				<div class="chatbericht_left">
+					<p>Mike zegt: <br> Check deze serie!: <a href="images/5.jpg" data-lightbox="serie" data-title="Narcos"><img src="images/5.jpg" alt="Narcos"width="100px"></a></p>
+				</div>
+				
+				<div class="chatbericht_right">
+					<p>Gino zegt: <br>Wat een toffe serie! Iets wat ik erg miste in mijn leven.</p>
+				</div>
+				
+				<div class="chatbericht_left">
+					<p>Mike zegt: <br>Ja man! haha</p>
+				</div>
+			</div>
+
+			<div id="chatberichten">
+				<div class="addChatBerichten">
+					<input type="text" id="inputChatBericht" placeholder="Typ een bericht"/>
+					<button class="addChatBericht">Plaats bericht</button>
+					<div id="error"></div>
+
+				</div>
+			</div>
+		
+		</div>
+		<script src="js/lightbox.js"></script>
+	</body>
+</html>

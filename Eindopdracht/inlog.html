@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Inlogscherm</title>
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="author" content"Gino van de Hoven">
+		<meta name="description" content="HU schoolopdracht webvaardigheden">
+
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+		<script src="js/inlog.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>
+
+		<header>
+			<div id="menu">
+				<img src="images/logo.png" class="logo" alt="logo NETFLIXICO" height="30px">
+			</div>
+		</header>
+
+		<div id="inlogformulier">
+			<img src="images/logo.png" class="logo" alt="logo NETFLIXICO" height="50px">
+			<form id="myform">
+				<input type="text" name="gb" placeholder="Gebruikersnaam" value"" />
+				<br>
+				<input type="password" name="ww" placeholder="Wachtwoord" value"" />
+			</form>
+
+			<br>
+			
+			<button onclick="inloggen()">Inloggen:</button>
+
+			<a href="registratie.html"><input type="button" name="signup" value="Registreren" class="register"></a>
+
+			<p id="bericht"></p>
+		</div>
+
+	</body>
+</html>
+
